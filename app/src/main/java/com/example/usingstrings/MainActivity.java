@@ -13,47 +13,43 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView txtVMsg2 = findViewById(R.id.TvMsg2);
-        txtVMsg2.setText(R.string.Msg2);
+        TextView TxtMsg2 = findViewById(R.id.TvMsg2);
+        TxtMsg2.setText(R.string.Msg2);
 
-
-        Log.i((tag ) "Lifecycle", (msg) "OnCreate() invoked");
-
+        Log.i( "Lifecycle",  "onCreate() invoked");
     }
 
     @Override
     protected void onStart() {
         super.onStart();
 
-        Log.i( tag: "Lifecycle", msg: "OnStart() invoked");
-
+        Log.i("Lifecycle", "OnStart() invoked");
     }
-
     @Override
-    protected void onResume(){
+    protected void onResume() {
         super.onResume();
 
-        Log.i( tag: "Lifecycle", msg: "OnResume() invoked");
+        Log.i("Lifecycle", "OnResume() invoked");
     }
-
     @Override
-    protected void onPause(){
+    protected void onPause() {
         super.onPause();
 
-        Log.i( tag: "Lifecycle", msg: "onPause() invoked");
-    }
+        Log.i("Lifecycle", "OnPause() invoked");
 
+    }
     @Override
-    protected void onStop(){
+    protected void onStop() {
         super.onStop();
 
-        Log.i( tag: "Lifecycle", msg: "onStop() invoked");
+        Log.i("Lifecycle", "OnStop() invoked");
+
     }
 
     @Override
-    protected void onDestroy(){
+    protected void onDestroy() {
         super.onDestroy();
 
-        Log.i( tag: "Lifecycle", msg: "onDestroy() invoked");
+        Log.i("Lifecycle", "OnDestroy() invoked");
     }
 }
